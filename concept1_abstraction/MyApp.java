@@ -1,18 +1,15 @@
-import javax.swing.*;
 import java.util.Date;
 
-public class MyApp extends JFrame {
+public class MyApp {
     public static void main(String[] args) {
-        new MyApp();
-    }
+        // Card c = new Card(); - Invalid
 
-    public MyApp() {
-        Card c = new DebitCard();
-        c.setCardNumber(1001);
-
+        CreditCard c = new CreditCard();
+        c.cardNumber = 1234;
         c.expiry = new Date(2000, 1, 1);
 
         System.out.println("Card 1 = " + c.toString());
         c.reportStolen();
+        c.block();
     }
 }
