@@ -5,12 +5,14 @@ public abstract class Card {  // Abstraction
     Date expiry;
     int security;
 
-    // Abstraction
-    public abstract void reportStolen();
-    public abstract void block();
 
     @Override
     public String toString() {
         return "Card " + cardNumber;
     }
+
+
+    // Abstraction
+    public abstract void reportStolen();
+    public abstract void block();
 }

@@ -10,7 +10,9 @@ public class Card {
         return "Card " + cardNumber;
     }
 
+    
     /* GETTERS & SETTERS */
+
     public int getCardNumber() {
         return this.cardNumber;
     }

@@ -6,6 +6,6 @@ public class DebitCard extends Card {  // Inheritance
 
     @Override
     public String toString() {
-        return cardNumber + " [" + type + "]";
+        return "Debit Card " + cardNumber;
     }
 }

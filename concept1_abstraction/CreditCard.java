@@ -3,6 +3,15 @@ public class CreditCard extends Card {
     float interestRate = 5;
     float transactionLimit = 1000;
 
+
+    @Override
+    public String toString() {
+        return cardNumber + " [" + type + "]";
+    }
+
+
+    // Abstraction
+    
     @Override
     public void reportStolen() {
         System.out.println("Report Stolen @ Credit Card");
@@ -11,11 +20,5 @@ public class CreditCard extends Card {
     @Override
     public void block() {
         System.out.println("Block @ Credit Card");
-    }
-
-
-    @Override
-    public String toString() {
-        return cardNumber + " [" + type + "]";
     }
 }
