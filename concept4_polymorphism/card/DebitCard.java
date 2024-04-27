@@ -1,3 +1,4 @@
+package card;
 public class DebitCard extends Card {
     String type = "DEBIT CARD";
     float interestRate = 0;

@@ -1,3 +1,4 @@
+package card;
 public class MyApp {
     public static void main(String[] args) {
         CreditCard cc = new CreditCard();  // Normal object instantiation
